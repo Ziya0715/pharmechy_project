@@ -1,13 +1,13 @@
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 460px);
+  gap: 28px;
   align-items: start;
 }
 
 .heading {
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  margin-bottom: 14px;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  margin-bottom: 12px;
 }
 
 @media (max-width: 900px) {

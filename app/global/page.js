@@ -32,6 +32,7 @@ export default function GlobalPage() {
     <main id="main">
       <JsonLd data={breadcrumbJsonLd(crumbs)} />
       <PageHero
+        className={styles.hero}
         breadcrumb={crumbs}
         title="A Global Network Rooted in Pharmaceutical Excellence"
         text="Our business model is designed to connect pharmaceutical supply opportunities with healthcare markets across India and international regions."

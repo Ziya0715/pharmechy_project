@@ -12,9 +12,10 @@ export default function PageHero({
   actions = [],
   breadcrumb,
   children,
+  className = "",
 }) {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${className}`.trim()}>
       <div className={`wrap ${styles.inner} ${image ? styles.withImage : ""}`}>
         <div className={styles.copy}>
           {breadcrumb ? <Breadcrumb items={breadcrumb} /> : null}

@@ -1,6 +1,11 @@
+.hero {
+  padding-bottom: 12px;
+}
+
 .mapSection {
   background: var(--green);
-  padding: 0 0 72px;
+  padding: 0 0 56px;
+  margin-top: -28px;
 }
 
 .mapWrap {
@@ -12,9 +17,24 @@
   width: min(100%, 1080px);
   height: auto;
   border-radius: 8px;
+  transform: translateY(-18px);
 }
 
 .eyebrow,
 .card .eyebrow {
   margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding-bottom: 8px;
+  }
+
+  .mapSection {
+    margin-top: -12px;
+  }
+
+  .map {
+    transform: translateY(-8px);
+  }
 }

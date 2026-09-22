@@ -53,7 +53,7 @@ export default function ContactPage() {
         imageAlt="Gold envelope, globe and fountain pen illustration for a business enquiry"
       />
 
-      <section className="section section-cream">
+      <section className="section-tight section-cream">
         <div className={`wrap ${styles.layout}`}>
           <div>
             <p className="eyebrow">Professional contact</p>

@@ -119,17 +119,17 @@ export default function ContactForm() {
           {errors.businessType ? <em>{errors.businessType}</em> : <em aria-hidden="true">&nbsp;</em>}
         </label>
         <Field label="Product / Requirement" name="productRequirement" value={values.productRequirement} onChange={update} error={errors.productRequirement} />
-        <Field label="Target Market" name="targetMarket" value={values.targetMarket} onChange={update} error={errors.targetMarket} className={styles.full} />
+        <Field label="Target Market" name="targetMarket" value={values.targetMarket} onChange={update} error={errors.targetMarket} />
         <label className={`${styles.field} ${styles.full}`}>
           <span>Message</span>
-          <textarea name="message" rows="5" value={values.message} onChange={update} aria-invalid={Boolean(errors.message)} required />
+          <textarea name="message" rows="3" value={values.message} onChange={update} aria-invalid={Boolean(errors.message)} required />
           {errors.message ? <em>{errors.message}</em> : <em aria-hidden="true">&nbsp;</em>}
         </label>
       </div>
       <p className={status === "success" ? styles.success : status === "error" ? styles.error : styles.status} role="status">
         {serverMessage || "\u00a0"}
       </p>
-      <Button type="submit" variant="gold" disabled={status === "submitting"}>
+      <Button type="submit" variant="gold" className={styles.submit} disabled={status === "submitting"}>
         {status === "submitting" ? "Sending…" : "Send Enquiry"}
       </Button>
     </form>
