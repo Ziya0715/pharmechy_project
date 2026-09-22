@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}

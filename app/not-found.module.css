@@ -1,0 +1,24 @@
+.page {
+  background: var(--green);
+  color: var(--white);
+  min-height: 58vh;
+  padding: 80px 0;
+}
+
+.page h1 {
+  color: var(--white);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  margin-bottom: 16px;
+}
+
+.page p {
+  color: var(--text-on-green);
+  max-width: 46ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}

@@ -1,0 +1,52 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.article h2 {
+  font-size: 1.7rem;
+  margin: 0 0 12px;
+}
+
+.article h2 + p {
+  margin-bottom: 28px;
+  color: var(--text-muted);
+  max-width: 62ch;
+}
+
+.aside .card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.meta {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 22px;
+}
+
+.meta dt {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 700;
+}
+
+.meta dd {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
